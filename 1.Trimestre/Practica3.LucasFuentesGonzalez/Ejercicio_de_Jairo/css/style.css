@@ -1,0 +1,6 @@
+div{
+    border: 1px solid red;
+    margin: 20px 0; /* 20px arriba y abajo, 0 a derechecha e izquierda*/
+    padding: 5px;
+    background-color: rgb(255, 0, 0.3);
+}

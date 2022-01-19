@@ -1,0 +1,83 @@
+body{
+    background-image: url("https://i.imgur.com/ov7Pc8j.jpg%22");
+    font-family: sans-serif;
+    margin-top: 50px;
+    background-size: cover!important;
+    background-repeat: no-repeat;
+}
+
+#contenedor{
+    width: 599px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 0px 0px 40px 0px;
+    float: right;
+    margin-right: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.56);
+}
+
+h1{
+    text-align: center;
+    padding-top: 35px;
+    font-family: sans-serif;
+    color: black;
+    font-size: 27px;
+}
+
+p{
+    text-align: justify;
+}
+
+h3{
+    color: black;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.mensaje{
+    text-align: center;
+    padding-bottom: 45px;
+    font-family: sans-serif;
+    color: black;
+}
+
+.error{
+    color: darkred;
+    width: 400px;
+    text-align: center;
+    font-size: 13px;
+    margin-left: 96px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+.santander{
+    margin-top: -51px;
+    margin-left: -10px;
+}
+
+form{
+    font-size: 20px;
+}
+
+label{
+    display: inline-block;
+    margin-top: 14px;
+}
+
+.interior{
+    display: inline-block;
+    margin-left: -165px;
+}
+
+.input{
+    float: right;
+    margin-left: -180px;
+    margin-top: 17px;
+    text-align: center;
+}
+
+.enviar{
+    text-align: center;
+}

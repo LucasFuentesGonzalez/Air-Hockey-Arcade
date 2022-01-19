@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obtención de información de API</title>
+</head>
+<body>
+
+    <form action="index.html">
+        <h3>Elije una ciudad:</h3>
+        <select name="ciudad" id="city">
+            <option value="Madrid,es">Madrid</option>
+            <option value="London,uk">London</option>
+            <option value="Paris,fr">Paris</option>
+            <option value="Berlin,de">Berlin</option>
+        </select>
+        <div id="salida"></div>
+        <img src="" id="icono" alt="Icono del tiempo">
+    </form>
+
+
+    <script>
+
+        //LE PONEMOS LA FUNCION DE CONSULTA
+        window.onload = function(){
+            document.querySelector("#city").addEventListener("change",consulta);
+        }
+        function consulta() {
+
+            //CREAMOS LAS VARIABLES DE APIKEY, LA CADENA Y LA CIUDAD
+
+            var apiKey = "37151540627b1babb7fb64df17775261";
+            var url = "http://api.openweathermap.org/data/2.5/weather?";
+            var ciudad = document.querySelector("#city").value;
+            var recurso = url + "q=" + ciudad + "&APPID=" + apiKey + "&units=metric";
+
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+
+                    var tiempo = JSON.parse(xhttp.responseText);
+                    document.getElementById("salida").innerHTML =
+                        "Temperatura: " + tiempo.main.temp + "ºC" + "<br>" +
+                        "Humedad: " + tiempo.main.humidity + "%" + "<br>" +
+                        "Viento: " + tiempo.wind.speed + "m/s" + "<br>" +
+                        "<img src='https://openweathermap.org/img/wn/" + tiempo.weather[0].icon + "@2x.png' >";
+                }
+            };
+            xhttp.open("GET", recurso, true);
+            xhttp.send();
+        }
+    </script>
+    <!--
+    Para sacar toda la informacin: xhttp.responseText;
+    Para sacar algo en concreto ejemplo: tiempo.main.temp
+
+    -->
+</body>
+</html>

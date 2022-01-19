@@ -1,0 +1,62 @@
+/* Modifica el body */
+body{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: ;
+}
+
+h1{
+    margin-top: 0;
+}
+
+div.cuadrado{
+    border: solid 2px;
+    border-color: #eeeeee;
+    background-color: #fafafa;
+    padding: 50px 50px 50px 50px;
+    margin-top: 30px;
+}
+
+/* Modifica las cajas */
+div.cajas{
+    display: inline-block;
+    margin: 5px;
+    border: solid 1px;
+    border-color: #b66468;
+    height: 200px;
+
+}
+
+/* Modifica el los meses */
+h3{
+    background-color: #b66468;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+table{
+    margin-bottom: 10px;
+    border-spacing: 0;
+}
+
+tr{
+
+}
+
+/* Modifica los dias de la semana */
+th{
+    background-color: #efeeee;
+    padding: 4px;
+    margin-bottom: 40px;
+}
+
+td{
+    padding-left: 5%;
+    padding-top: 5px;
+}
+
+

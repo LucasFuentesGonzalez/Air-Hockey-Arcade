@@ -1,0 +1,114 @@
+body{
+
+}
+
+/* Editar Nav */
+nav{
+    background-color: #d0c8c8;
+    padding: 0 60px 0 60px;
+}
+nav div{
+    float: right;
+    font-size: 23px;
+    margin: 30px 20px 20px 20px;
+}
+nav a{
+    margin: 30px 20px 20px 20px;
+    color: #000000;
+}
+nav a:hover{
+    color: #fa3a1c;
+}
+nav img{
+    width: 100px;
+    padding-top: 5px;
+}
+
+/* Editar Slider */
+.slider{
+    height: 700px;
+    background-color: #1a202c;
+}
+
+
+
+/* Editar Entradilla */
+.entradilla{
+    font-size: 30px;
+    text-align: center;
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px 0;
+}
+.barra{
+    width: 300px;
+    height: 10px;
+    background-color: #4b0066;
+    border-radius: 10px;
+}
+
+
+
+/* Editar Cajas */
+.cajas{
+    width: 30%;
+    height: 500px;
+    background-color: #31448f;
+    float: left;
+    margin: 10px 20px 40px 10px;
+}
+
+
+
+
+/* Editar Arcade y texto */
+.arcade{
+    width: 20%;
+    height: 700px;
+    background-color: #1784de;
+    float: left;
+    margin: 10px 10px 40px 0;
+}
+.descripcion{
+    width: 30%;
+    height: 0;
+    background-color: rgba(181, 221, 255, 0.15);
+    float: left;
+    margin: 250px 0 40px 30px;
+}
+
+
+
+/* Editar Video */
+.video{
+    height: 700px;
+    background-color: #0f2141;
+    margin: 100px 0 100px 0;
+}
+
+
+
+
+/* Editar Footer */
+footer{
+    height: 150px;
+    background-color: #000000;
+    padding: 40px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    width: 200px;
+    height: 80px;
+}
+.footer a{
+    color: white;
+}
+footer a:hover{
+    color: #822eb0;
+}
